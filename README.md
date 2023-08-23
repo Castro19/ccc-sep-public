@@ -9,7 +9,6 @@ A comprehensive Schedule Builder for Clovis Community College designed to create
   - **Unverified Schedules:** An algorithm I created to create a SEP based on the classes                extracted from the PDF, "Or" & "AND" Logic, the prerequisites, & the unit count per semester.  
   - **Degree Analytics**: Find completed and nearly completed degrees based on the SEP Schedule           created or imported. 
   - **IGETC/CSU-GE Completion**: Finds what areas have been satisfied and what classes satisfied          them based on their schedule
-  - **
 
 ## Tools & Libraries Used:
 ### PYTHON
