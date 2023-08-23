@@ -6,7 +6,7 @@ A comprehensive Schedule Builder for Clovis Community College designed to create
   - **ASSIST API Integration**: Gathers the PDF transfer agreements to display to the user or to          extract transferable classes from the PDF
   - **Extract Classes from PDF:** Functions that read the right side of the PDF agreement and finds      the class item based on font attributes and line spacing.  
   - **Verified Schedules**: Ability to store and retrieve verified schedules from PostgreSQL             Database.
-  - **Unverified Schedules:** An algorithm I created to create a SEP based on the classes                extracted from the PDF, "Or" & "AND" Logic, the prerequisites, & the unit count per semester.  
+  - **Unverified Schedules:** An algorithm I created to create a SEP based on the classes                extracted from the PDF, "Or" & "AND" Conjunction Logic, the prerequisites, & the unit count         per semester.  
   - **Degree Analytics**: Find completed and nearly completed degrees based on the SEP Schedule           created or imported. 
   - **IGETC/CSU-GE Completion**: Finds what areas have been satisfied and what classes satisfied          them based on their schedule
 
