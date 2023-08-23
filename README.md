@@ -1,6 +1,15 @@
 # Clovis Community College Schedule Builder
 
-A comprehensive Schedule Builder for Clovis Community College designed to create a Student Educational Planner (SEP). 
+A comprehensive Schedule Builder for Clovis Community College (CCC) designed to create a Student Educational Planner (SEP). An SEP is a schedule for 2-3 years that outlines a suggested course of study for the individual student based on major, transfer plan, and sequence of courses. Every student at CCC needs an SEP after enrolling, and the website [Assist](https://assist.org/) is used to find the courses they need to take based on their transfer university and major. 
+
+I created this web application because new students struggle to understand this PDF agreement and it can take them a couple of hours to find what classes to take and when to take them. Here is an example of my [ASSIST PDF Agreement](https://assist.org/transfer/report/26539871) where I transferred from CCC to CalPoly SLO. The outline and conjugation can be very intimidating and confusing to new students, so my goal was to make the process much easier and user friendly. 
+
+Besides the confusing PDF agreements, students need to check for prerequisites of those classes through the 259 page [catalog](https://www.cloviscollege.edu/_uploaded-files/_documents/admissions-and-aid/catalogs/college-catalog-23-24.pdf), and schedule the classes in the SEP PDF. This entire process can be extremely complicated, stressful, and time-consuming for new students, however, my application creates the schedule in seconds rather than hours! 
+
+Students at CCC, also need to apply for degrees during their last year, which can be very time consuming as they have to go through each major from this [link](https://www.cloviscollege.edu/academics/majors/2022-2023-majors-list.html). Many of my classmates I knew only graduated with 2-3 degrees when they actually earned 5+ degrees because they never checked the other degrees nor applied for them. The feature I implemented in my web application finds the earned degrees instantly, and it also finds the degrees almost completed along with the classes left to earn the almost completed degrees. This feature helps maximize the number of degrees a student earns and it has the potential to build the most optimal schedule. 
+
+This is just a public repo to showcase the important files / highlights, and it is missing some necessary files and functions. To access the Schedule Builder, visit:
+**https://www.ccc-sep.com**
 
 ## Features:
   - **ASSIST API Integration**: Gathers the PDF transfer agreements to display to the user or to          extract transferable classes from the PDF
