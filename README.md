@@ -1,22 +1,55 @@
 # Clovis Community College Schedule Builder
 
-A comprehensive Schedule Builder for Clovis Community College (CCC) designed to create a Student Educational Planner (SEP). A SEP is a schedule for 2-3 years that outlines a suggested course of study for the individual student based on major, transfer plan, and sequence of courses. Every student at CCC needs a SEP after enrolling, and the website [Assist](https://assist.org/) is used to find the courses they need to take based on their transfer university and major. Here is an example of my [SEP schedule](https://drive.google.com/file/d/123zufUVYME2e0x0yxGqaUfAPpxhuxSAS/view?usp=sharing) at CCC.
+## Introductory:
+This web application is a comprehensive one-stop tool for counselors, students, and faculty at CCC to use when trying to build SEPs, finding completed degrees/almost completed degrees, checking IGETC/CSU-GE completion, and more! 
 
-I created this web application because new students struggle to understand these PDF agreement and it can take them a couple of hours to find what classes to take and when to take them. Here is an example of my [ASSIST PDF Agreement](https://assist.org/transfer/report/26539871) where I transferred from CCC to CalPoly SLO. The outline and conjugation can be very intimidating and confusing to new students, so my goal was to make the process much easier and user-friendly. 
+A SEP is a schedule for 2-3 years that outlines a suggested course of study for the individual student based on major, transfer plan, and sequence of courses. Every student at CCC needs a SEP after enrolling, and the website [Assist](https://assist.org/) is used to find the courses they need to take based on their transfer university and major. Here is an example of my [SEP schedule](https://drive.google.com/file/d/123zufUVYME2e0x0yxGqaUfAPpxhuxSAS/view?usp=sharing) at CCC.
 
-Besides the confusing PDF agreements, students need to check for prerequisites of those classes through the 259 page [catalog](https://www.cloviscollege.edu/_uploaded-files/_documents/admissions-and-aid/catalogs/college-catalog-23-24.pdf), and schedule the classes in the SEP PDF. This entire process can be extremely complicated, stressful, and time-consuming for new students, however, my application creates the schedule in seconds rather than hours! 
+The Degree finder feature is a very helpful tool to instantly find what degrees a student will earn based on the classes in their SEP. The tool also finds degrees that are almost completed, lists the leftover required classes, and allows the user to add the class to their SEP with a simple click. 
 
-Students at CCC, also need to apply for degrees during their last year, which can be very time-consuming as they have to go through each major from this [link](https://www.cloviscollege.edu/academics/majors/2022-2023-majors-list.html). Many of my classmates I knew only graduated with 2-3 degrees when they actually earned 5+ degrees because they never checked the other degrees or applied for them. The feature I implemented in my web application finds the earned degrees instantly, and it also finds the degrees almost completed along with the classes left to earn the almost completed degrees. This feature helps maximize the number of degrees a student earns and it has the potential to build the most optimal schedule. 
+## Why I built this: 
 
-This is just a public repo to showcase the important files/highlights, and it is missing some necessary files and functions. To access the Schedule Builder, visit:
+### Schedule Builder
+
+I created this web application because new students struggle to understand these PDF agreement and it can take them a couple of hours to find what classes to take and when to take them. Here is an example of my [ASSIST PDF Agreement](https://assist.org/transfer/report/26539871) where I transferred from CCC to CalPoly SLO: 
+
+![ASSIST PDF Snippet](https://github.com/Castro19/ccc-sep-public/assets/74516049/715311d1-098d-400f-8fce-cb35b7c875ed) 
+
+The outline and configuration can be very intimidating and confusing to new students, so my goal was to make the process much easier and user-friendly. 
+
+Besides the confusing PDF agreements, students need to check for prerequisites of those classes through the 259 page [catalog](https://www.cloviscollege.edu/_uploaded-files/_documents/admissions-and-aid/catalogs/college-catalog-23-24.pdf). There are over 450 courses available at CCC, and here is an example of how these classes are constructed in the catalog: 
+
+![catalog-example](https://github.com/Castro19/ccc-sep-public/assets/74516049/23c2375c-490e-4232-b6b5-492f65e34477") 
+
+For new students, this process can be very stressful, intimidating, and time-consuming. On average students can take multiple hours to do this by themselves. Counselors can create a SEP for the student, however, it can take 30 minutes to an hour to complete. My application creates the SEP in seconds while providing a friendly UI and offering other helpful features. 
+
+### Degree Finder
+
+Students at CCC, also need to apply for degrees during their last year, which can be very time-consuming as they have to go through each major from this [link](https://www.cloviscollege.edu/academics/majors/2022-2023-majors-list.html). 
+
+Most of my classmates I knew only graduated with 2-3 degrees when they actually earned 5+ degrees because they never checked the other degrees or applied for them. When I was searching for my completed degrees, the process took me about 30 minutes. The feature I implemented in my web application finds the earned degrees instantly, and it also finds the degrees almost completed along with the classes leftover. 
+
+This feature helps maximize the number of degrees a student can earn and it has the potential to build the most optimal schedule as it combines transfer requirements, degree requirements, and IGETC/CSU-GE requirements all together. 
+
+Some degree requirements can be very complicated, as well. Here is an example of a degree's requirements at CCC:
+
+![simple degree req](https://github.com/Castro19/ccc-sep-public/assets/74516049/d3b27305-b312-4c73-99cf-54016e8218c1)
+
+### SideNote 
+This repository serves as a showcase of my work on the Clovis Community College Schedule Builder. It highlights key features, the technologies used, and the purpose of the application. However, it is missing some necessary files and functions to get the web application running. 
+
+### To access the Schedule Builder, visit
 **https://www.ccc-sep.com**
 
 ## **Features:**
+
 ### **ASSIST API Integration**: 
-Gathers the PDF transfer agreements to display to the user or to extract transferable classes from the PDF
+Gathers the PDF transfer agreements to display to the user or to extract transferable classes from the PDF. The API was also used to create a Dictionary that contains Universities and a list of their majors. Creating this dictionary improved the response time for the dropdown menu that lists the majors of the university. Here is the Dropdown Functionality: ![gif](https://github.com/Castro19/ccc-sep-public/assets/74516049/b774eab0-14f8-4b29-8ed1-e588cf2de17b)
+
+Once the user selects the transfer university and major, the program uses the ASSIST API...
 
 ### **Extract Classes from PDF:** 
-Functions that read the right side of the PDF agreement and finds the class item based on font attributes and line spacing. It keeps the conjugations of "AND" & "OR" so another function can logically choose which classes are required to take. 
+Functions that read the right side of the PDF agreement and finds the class item based on font attributes and line spacing. It keeps the configurations of "AND" & "OR" so another function can logically choose which classes are required to take. 
 
 ### **Uploading SEPs:** 
 Users can upload their SEP PDF that is sent to my AWS S3 Bucket where my function downloads it from. After downloading, the function extracts the corresponding textbox locations and values from the PDF, and then automatically inserts them into the textboxes on the webpage. 
