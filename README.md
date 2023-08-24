@@ -11,20 +11,43 @@ Students at CCC, also need to apply for degrees during their last year, which ca
 This is just a public repo to showcase the important files/highlights, and it is missing some necessary files and functions. To access the Schedule Builder, visit:
 **https://www.ccc-sep.com**
 
-## Features:
-  - **ASSIST API Integration**: Gathers the PDF transfer agreements to display to the user or to          extract transferable classes from the PDF
-  - **Extract Classes from PDF:** Functions that read the right side of the PDF agreement and finds      the class item based on font attributes and line spacing. It keeps the conjugations of "AND" & "OR" so another function can logically choose which classes are required to take. 
-  - **Uploading SEPs:** Users can upload their SEP PDF that is sent to my AWS S3 Bucket where my function downloads it from. After downloading, the function extracts the corresponding textbox locations and values from the PDF, then automatically inserts them into the textboxes on the webpage. 
-  - **Retrieving Verified Schedules**: Ability to store and retrieve verified schedules from a PostgreSQL             Database. A green checkmark appears at the top of the page to indiciate it is a verified schedule. 
-  - **Uploading Verified Schedules:** Counselors can easily upload a completed SEP schedule to the PostGreSQL database by inserting a passcode. 
-  - **Unverified Schedules:** An algorithm I created to create a SEP based on the classes                extracted from the PDF, "Or" & "AND" Conjunction Logic, the prerequisites, & the unit count         per semester.
-  - **A dynamic UI:** Users can easily insert, delete, move, and swap classes for each semester with ease. Class Buttons also change color to indicate that the class has been used.
-  - **Prerequisite/Corerequisite Panels:** Each class button has a hidden panel that displays the prerequisites and corerequisites of that class when hovering over the panel icon. 
-  - **Error Warnings:** The Text-Box color changes to red if the class is invalid, either the class is not at CCC or the class does not have the same format. Text-Box color changes to orange if it is a duplicate class. 
-  - **Degree Analytics**: Find completed and nearly completed degrees based on the SEP Schedule           created or imported. 
-  - **IGETC/CSU-GE Completion**: Finds what areas have been satisfied and what classes satisfied          them based on their schedule. Area dropdown buttons will change to green to indicate completiong along with the subject dropdown so the user can locate what class satisfied the area.
-  - **Export the SEP to the Formal SEP PDF:** After the schedule has been finalized, users can export the schedule to the standard PDF for SEP schedules.
-  - **Report Error:** User can report any errors they have where the error message will be sent to my E-mail and automatically include the university and major in the message, as well. 
+## **Features:**
+### **ASSIST API Integration**: 
+Gathers the PDF transfer agreements to display to the user or to extract transferable classes from the PDF
+
+### **Extract Classes from PDF:** 
+Functions that read the right side of the PDF agreement and finds the class item based on font attributes and line spacing. It keeps the conjugations of "AND" & "OR" so another function can logically choose which classes are required to take. 
+
+### **Uploading SEPs:** 
+Users can upload their SEP PDF that is sent to my AWS S3 Bucket where my function downloads it from. After downloading, the function extracts the corresponding textbox locations and values from the PDF, and then automatically inserts them into the textboxes on the webpage. 
+
+### **Retrieving Verified Schedules**: 
+Ability to store and retrieve verified schedules from a PostgreSQL Database. A green checkmark appears at the top of the page to indicate it is a verified schedule. 
+
+### **Uploading Verified Schedules:** 
+Counselors can easily upload a completed SEP schedule to the PostGreSQL database by inserting a passcode. 
+### **Unverified Schedules:** 
+An algorithm I created to create a SEP based on the classes extracted from the PDF, "Or" & "AND" Conjunction Logic, the prerequisites, & the unit countnper semester.
+
+### **A dynamic UI:** 
+Users can easily insert, delete, move, and swap classes for each semester with ease. Class Buttons also change color to indicate that the class has been used.
+
+### **Prerequisite/Corequisite Panels:** 
+Each class button has a hidden panel that displays the prerequisites and corequisites of that class when hovering over the panel icon. 
+
+### **Error Warnings:** 
+The Text-Box color changes to red if the class is invalid, either the class is not at CCC or the class does not have the same format. Text-Box color changes to orange if it is a duplicate class. 
+
+### **Degree Analytics**: 
+Find completed and nearly completed degrees based on the SEP Schedule created or imported. 
+
+### **IGETC/CSU-GE Completion**: 
+Finds what areas have been satisfied and what classes satisfied them based on their schedule. Area dropdown buttons will change to green to indicate completing along with the subject dropdown so the user can locate what class satisfied the area.
+
+### **Export the SEP to the Formal SEP PDF:** 
+After the schedule has been finalized, users can export the schedule to the standard PDF for SEP schedules.
+### **Report Error:** 
+Users can report any errors they have and the error message will be sent to my E-mail and automatically include the university and major in the message, as well. 
 
 ## Tools & Libraries Used:
 ### PYTHON
