@@ -1,5 +1,8 @@
 # Clovis Community College Schedule Builder
 
+### To access the Schedule Builder, visit
+**https://www.ccc-sep.com**
+
 ## Introductory:
 This web application is a comprehensive one-stop tool for counselors, students, and faculty at CCC to use when trying to build SEPs, finding completed degrees/almost completed degrees, checking IGETC/CSU-GE completion, and more! 
 
@@ -37,9 +40,6 @@ Some degree requirements can be very complicated, as well. Here is an example of
 
 ### SideNote 
 This repository serves as a showcase of my work on the Clovis Community College Schedule Builder. It highlights key features, the technologies used, and the purpose of the application. However, it is missing some necessary files and functions to get the web application running. 
-
-### To access the Schedule Builder, visit
-**https://www.ccc-sep.com**
 
 ## **Features:**
 
